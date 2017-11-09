@@ -1,0 +1,182 @@
+#tachometer {
+    background: #21201F;
+    margin: 0 auto;
+    width: 475px;
+    height: 350px;
+    display: block;
+    position: relative;
+    background: url(../images/meter.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+.ii {
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    z-index: 2;
+    
+}
+.ii div {
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    padding:6px;
+    box-sizing: border-box;
+}
+
+.num_1 {transform: rotate(120deg); top:20px;}
+.num_2 {transform: rotate(90deg); top:13px; left:5px}
+.num_3 {transform: rotate(60deg); top:21px;}
+.num_4 {transform: rotate(30deg); top:25px;}
+.num_5 {transform: rotate(0deg);  top:30px;left:-8px}
+.num_6 {transform: rotate(330deg); top:35px;left:-10px}
+.num_7 {transform: rotate(300deg); top:35px;left:-7px;}
+.num_8 {transform: rotate(270deg);top:30px;}
+.num_9 {transform: rotate(240deg);top:30px;left:8px}
+
+#redline{     
+    width: 30px;
+    height: 83px;
+    position:absolute;
+    top: 152px;
+    right: 12px;
+    border-width: 16px;
+    border-radius: 90%;
+    border-style: solid;
+    border-color:transparent #F14134 transparent transparent;
+    transform:rotate(15deg);
+    z-index:1;
+}
+.line {
+    background: #404040;
+    height: 0;
+    left: 50%;
+    position: absolute;
+    top: 63%;
+    width: 0;
+    transform-origin: 50% 100%;
+    margin: -81px -8px 0;
+    padding: 114px 3px 0 20px;
+    z-index: 0;
+    border-radius: 90% 90% 0 0;
+}
+.animation-start{
+    transform:rotate(-95deg);
+    animation: pendulum;
+    animation-duration: 5s;
+    animation-delay: 1s;
+}
+
+.animation-start2{
+    transform:rotate(75deg);
+    animation: pendulum2;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+}
+.counter {
+    background: #404040;
+    height: 0;
+    left: 41%;
+    position: absolute;
+    top: 58%;
+    width: 20%;
+    height: 95px;
+    z-index: 0;
+    border-radius: 50%;
+}
+.counter-number {
+    color: #fff;
+    height: 0;
+    left: 1%;
+    position: absolute;
+    top: 68%;
+    width: 100%;
+    z-index: 0;
+    text-align: center;
+    font-size:24px;
+}
+.inner {
+    width: 30px;
+    height: 30px;
+    margin: 10px auto 0;
+    background-color: #343536;
+    border-radius: 100%;
+    box-shadow: inset 0 8px 90px 0 rgba(167, 23, 10, 0.4);
+    position: relative;
+}
+@keyframes pendulum {
+    70% {
+        transform:rotate(100deg);
+    }
+
+   
+    71% {
+        transform:rotate(98deg);
+    }
+    72% {
+        transform:rotate(96deg);
+    }
+    73% {
+        transform:rotate(98deg);
+    }
+    74% {
+        transform:rotate(96deg);
+    }
+    75% {
+        transform:rotate(98deg);
+    }
+    76% {
+        transform:rotate(96deg);
+    }
+    77% {
+        transform:rotate(98deg);
+    }
+    78% {
+        transform:rotate(96deg);
+    }
+    79% {
+        transform:rotate(98deg);
+    }
+    100% {
+        transform:rotate(70deg);
+    }
+
+}
+@keyframes pendulum2 {
+    10% {
+        transform:rotate(100deg);
+    }
+    15% {
+        transform:rotate(98deg);
+    }
+    20% {
+        transform:rotate(90deg);
+    }
+    25% {
+        transform:rotate(98deg);
+    }
+    30% {
+        transform:rotate(90deg);
+    }
+    35% {
+        transform:rotate(98deg);
+    }
+    40% {
+        transform:rotate(90deg);
+    }
+    45% {
+        transform:rotate(98deg);
+    }
+    50% {
+        transform:rotate(90deg);
+    }
+    55% {
+        transform:rotate(98deg);
+    }
+   
+   
+    100% {
+        transform:rotate(70deg);
+    }
+
+}

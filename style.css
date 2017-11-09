@@ -1,0 +1,26 @@
+/*
+Theme Name:     Easy Child theme
+Description:    WordPress child theme with necessary files. Description will be changed. 
+Author:         Tariq.
+Author URI:     http://tariqxpress.com
+Template:       Parent theme name
+Version:        1.1
+(optional values you can add: Theme URI, Author URI, Version, License, License URI, Tags, Text Domain)
+*/
+
+
+
+
+/*--Responsive Breaks--*/
+@media screen and ( max-width: 767px ) and ( max-width: 991px) {
+
+}
+
+@media screen and ( max-width: 767px ) {
+
+}
+
+@media screen and ( max-width: 460px ) and ( max-width: 767px) {
+
+}
+
